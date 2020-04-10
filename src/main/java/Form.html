@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Formularz rejestracyjny</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+
+
+</head>
+<body>
+<div class="container">
+    <h1>Rejestracja</h1>
+    <form method="post" action="url">
+        <div class="form-group">
+            <label>Imię:</label>
+            <input type="text" class="form-control" placeholder="Wpisz imię">
+        </div>
+        <div class="form-group">
+            <label>Nazwisko</label>
+            <input type="text" class="form-control" placeholder="Wpisz nazwisko">
+        </div>
+
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Płeć</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="kobieta"
+                               checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Kobieta
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                               value="mężczyzna">
+                        <label class="form-check-label" for="gridRadios2">
+                            Mężczyzna
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <label>Adres email</label>
+            <input type="email" class="form-control" placeholder="Wpisz adres email" name="email">
+        </div>
+        <div class="form-group">
+            <label>Hasło</label>
+            <input type="password" class="form-control" placeholder="Hasło" name="pwd">
+            <small class="form-text text-muted">Min. 8 znaków</small>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Miasto</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-4">
+                <label>Województwo</label>
+                <select class="form-control">
+                    <option selected>dolnośląskie</option>
+                    <option selected>kujawsko-pomorskie</option>
+                    <option selected>lubelskie</option>
+                    <option selected>lubuskie</option>
+                    <option selected>łódzkie</option>
+                    <option selected>małopolskie</option>
+                    <option selected>mazowieckie</option>
+                    <option selected>opolskie</option>
+                    <option selected>podkarpackie</option>
+                    <option selected>podlaskie</option>
+                    <option selected>pomorskie</option>
+                    <option selected>śląskie</option>
+                    <option selected>świętokrzyskie</option>
+                    <option selected>warmińsko-mazurskie</option>
+                    <option selected>wielkopolskie</option>
+                    <option selected>zachodniopomorskie</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label>Kod pocztowy</label>
+                <input type="text" maxlength="6" class="form-control">
+            </div>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="opcja" value="Akceptuję"> Akceptuję <a href="url">regulamin</a><br/>
+                <input type="checkbox" name="opcja" checked="checked" value="zgoda"/>Wyrażam zgodę na
+                otrzymywanie informacji marketingowych
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Rejestruj</button>
+    </form>
+</div>
+</body>
+</html>
